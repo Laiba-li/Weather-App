@@ -21,22 +21,22 @@ async function checkWeather(city) {
     const weatherIcon = document.querySelector(".weather-icon");
 
     if (data.weather[0].main == "Clouds") {
-        weatherIcon.src= "weather-app-img/images/clouds.png";
+        weatherIcon.src= "clouds.png";
     } 
     else if (data.weather[0].main == "Clear") {
-        weatherIcon.src= "weather-app-img/images/clear.png"
+        weatherIcon.src= "clear.png"
     } 
     else if (data.weather[0].main == "Drizzle") {
-        weatherIcon.src= "weather-app-img/images/drizzle.png"
+        weatherIcon.src= "drizzle.png"
     }
     else if (data.weather[0].main == "Mist") {
-        weatherIcon.src= "weather-app-img/images/mist.png"
+        weatherIcon.src= "mist.png"
     }
     else if (data.weather[0].main == "Rain") {
-        weatherIcon.src= "weather-app-img/images/rain.png"
+        weatherIcon.src= "rain.png"
     }
     else if (data.weather[0].main == "Snow") {
-        weatherIcon.src= "weather-app-img/images/snow.png"
+        weatherIcon.src= "snow.png"
     }
     document.querySelector(".weather").style.display = "block";
     document.querySelector(".error").style.display = "none";

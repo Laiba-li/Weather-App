@@ -1,42 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="card">
         <div class="search">
             <input type="text" placeholder="Enter City Name" spellcheck="false">
-            <button><img src="weather-app-img/images/search.png" alt="search icon"></button> 
+            <button>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </button>
         </div>
         <div class="error">
             <p>Invalid city Name</p>
         </div>
         <div class="weather">
-            <img src="weather-app-img/images/rain.png" class="weather-icon" alt="clear image">
+            <img src="rain.png" class="weather-icon" alt="clear image">
             <h1 class="temp">22°C</h1>
             <h2 class="city">New York</h2>
             <div class="details">
                 <div class="col">
-                    <img src="weather-app-img/images/humidity.png" alt="humidity">
+                    <img src="humidity.png" alt="humidity">
                     <div>
                         <p class="humidity">50%</p>
                         <p>Humidity</p>
                     </div>
                 </div>
                 <div class="col">
-                    <img src="weather-app-img/images/wind.png" alt="wind">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                        <path d="M17.5 6.5A2.5 2.5 0 1 1 20 4H2"></path>
+                        <path d="M12.5 12.5A2.5 2.5 0 1 1 15 10H2"></path>
+                        <path d="M8.5 18.5A2.5 2.5 0 1 1 11 16H2"></path>
+                    </svg>
                     <div>
                         <p class="wind">15 km/h</p>
                         <p>Wind Speed</p>
                     </div>
                 </div>
             </div>
-            </div>
+        </div>
     </div>
     <script src="weather.js"></script>
 </body>
+
 </html>
